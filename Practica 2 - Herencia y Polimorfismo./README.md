@@ -20,8 +20,27 @@ Esta práctica integra 5 ejercicios para aplicar herencia, polimorfismo y sobrec
 
 #### Reflexión de los ejercicios
 
-Esta práctica me permitió entender cómo la herencia evita repetir código al crear clases que comparten características, como `Auto` y `Motocicleta` a partir de `Vehiculo`.
+**Ejercicio 1 — Jerarquía simple.** Al principio repetí los atributos de marca, modelo y velocidad en `Auto` y `Motocicleta`, en lugar de concentrarlos en `Vehiculo`.
+Eso dificultaba inicializar los objetos y hacía que la jerarquía no aportara una ventaja real.
+Lo corregí usando el constructor de la clase base para compartir esos datos.
+En una futura versión diseñaría primero qué atributos son comunes y cuáles son exclusivos de cada clase antes de escribir el código.
 
-También comprendí que el polimorfismo permite tratar distintos objetos a través de una misma clase base, manteniendo un comportamiento específico para cada tipo de vehículo.
+**Ejercicio 2 — Polimorfismo en acción.** Mi error inicial fue pensar que un arreglo de `Vehiculo*` mostraría automáticamente los datos particulares de autos y motos.
+Al probarlo, entendí que el método debía declararse como virtual en la clase base para que cada objeto respondiera de forma distinta.
+Después comprobé el resultado recorriendo el arreglo y llamando al mismo método en cada posición.
+Para mejorar, verificaría desde el inicio qué métodos requieren comportamiento polimórfico y documentaría esa decisión en el diseño.
 
-La sobrecarga de métodos y operadores mostró cómo una misma operación puede adaptarse a diferentes datos, mientras que el uso de vectores e iteradores facilitó el manejo de colecciones de objetos.
+**Ejercicio 3 — Sobrecarga de operadores.** Al comparar `1/2` con `2/4`, cometí el error de pensar que bastaba revisar numerador y denominador directamente.
+Esa comparación falla aunque ambas fracciones representan el mismo valor, por lo que tuve que considerar productos cruzados.
+Además, noté que la suma actual conserva fracciones equivalentes sin simplificarlas, como `5/6` cuando aplica.
+En una siguiente iteración crearía una función para normalizar fracciones y validaría casos con denominadores negativos o cero.
+
+**Ejercicio 4 — Sobrecarga de métodos.** Al definir las versiones de `sumar()`, confundí la sobrecarga con cambiar solamente el tipo de retorno.
+Descubrí que las firmas deben diferenciarse por sus parámetros, como cantidad o tipo de argumentos.
+Probé dos enteros, tres enteros y dos decimales para confirmar que el compilador seleccionara cada método correcto.
+En el futuro escribiría primero una tabla con las firmas esperadas para evitar métodos ambiguos o repetidos.
+
+**Ejercicio 5 — Colección con iterador.** Inicialmente intenté recorrer el `vector` como si guardara objetos completos, aunque en realidad almacena punteros a `Vehiculo`.
+Eso me llevó a equivocarme al acceder al método y tuve que usar la desreferenciación del iterador antes de llamar a `mostrarInfo()`.
+La prueba con autos y una motocicleta confirmó que el recorrido conservaba el comportamiento polimórfico.
+Para una mejora posterior usaría punteros inteligentes o almacenaría objetos con una estrategia de propiedad clara para evitar problemas de memoria.
