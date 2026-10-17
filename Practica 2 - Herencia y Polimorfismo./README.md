@@ -12,11 +12,11 @@ Esta práctica integra 5 ejercicios para aplicar herencia, polimorfismo y sobrec
 
 | # | Programa | Descripción / Requisitos | Captura de pantalla |
 |---|---|---|---|
-| 1 | Jerarquía simple | Crear la clase base `Vehiculo` y las clases derivadas `Auto` y `Motocicleta`; mostrar la información de cada objeto. | |
-| 2 | Polimorfismo en acción | Guardar autos y motocicletas en un arreglo de punteros `Vehiculo*` y mostrar su información mediante un mismo método. | |
-| 3 | Sobrecarga de operadores | Crear la clase `Fraccion` y sobrecargar los operadores `+` y `==` para sumar y comparar fracciones. | |
-| 4 | Sobrecarga de métodos | Crear la clase `Calculadora` con distintas versiones del método `sumar()` para enteros y decimales. | |
-| 5 | Colección con iterador | Crear un `vector` de vehículos y recorrerlo con un iterador para mostrar la información de cada elemento. | |
+| 1 | Jerarquía simple | Crear la clase base `Vehiculo` y las clases derivadas `Auto` y `Motocicleta`; mostrar la información de cada objeto. | ![](01-jerarquia-simple/jerarquia.png) |
+| 2 | Polimorfismo en acción | Guardar autos y motocicletas en un arreglo de punteros `Vehiculo*` y mostrar su información mediante un mismo método. | ![](02-polimorfismo/polimorfismo.png) |
+| 3 | Sobrecarga de operadores | Crear la clase `Fraccion` y sobrecargar los operadores `+` y `==` para sumar y comparar fracciones. | ![](03-sobrecarga-operadores/sobrecarga.png) |
+| 4 | Sobrecarga de métodos | Crear la clase `Calculadora` con distintas versiones del método `sumar()` para enteros y decimales. | ![](04-sobrecarga-metodos/sobrecarga.png) |
+| 5 | Colección con iterador | Crear un `vector` de vehículos y recorrerlo con un iterador para mostrar la información de cada elemento. | ![](05-coleccion-iterador/coleccion-iterador.png) |
 
 #### Reflexión de los ejercicios
 
