@@ -1,0 +1,4 @@
+Teclado mecanico,899.50,12
+Mouse inalambrico,349.00,25
+Monitor 24 pulgadas,3499.90,8
+Audifonos USB,520.00,15

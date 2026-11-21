@@ -1,0 +1,17 @@
+[
+    {
+        "anio": 1967,
+        "autor": "Gabriel Garcia Marquez",
+        "titulo": "Cien anios de soledad"
+    },
+    {
+        "anio": 1955,
+        "autor": "Juan Rulfo",
+        "titulo": "Pedro Paramo"
+    },
+    {
+        "anio": 1943,
+        "autor": "Antoine de Saint-Exupery",
+        "titulo": "El principito"
+    }
+]
